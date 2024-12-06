@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_66b71f04d28dc90c57c791fc7e40d774 {
+                #map_d2913c35cfb77e531fd8e2ffd47dd54e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -43,16 +43,16 @@
         Spotswood Through the Years
     </h3>
     
-            <div class="folium-map" id="map_66b71f04d28dc90c57c791fc7e40d774" ></div>
+            <div class="folium-map" id="map_d2913c35cfb77e531fd8e2ffd47dd54e" ></div>
         
 </body>
 <script>
     
     
-            var map_66b71f04d28dc90c57c791fc7e40d774 = L.map(
-                "map_66b71f04d28dc90c57c791fc7e40d774",
+            var map_d2913c35cfb77e531fd8e2ffd47dd54e = L.map(
+                "map_d2913c35cfb77e531fd8e2ffd47dd54e",
                 {
-                    center: [40.3853, -74.398],
+                    center: [40.3839, -74.39801],
                     crs: L.CRS.EPSG3857,
                     zoom: 14,
                     zoomControl: true,
@@ -64,150 +64,252 @@
 
         
     
-            var tile_layer_cac542a76f640ccf0051ef3417839206 = L.tileLayer(
+            var tile_layer_7585fa7866b44684e6db778170269c53 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(map_d2913c35cfb77e531fd8e2ffd47dd54e);
         
     
-            var marker_8e8d3ac2e5392bdba2dd5a491d630de3 = L.marker(
+            var feature_group_bd17324e23eb82c718ef0529466004c6 = L.featureGroup(
+                {}
+            ).addTo(map_d2913c35cfb77e531fd8e2ffd47dd54e);
+        
+    
+            var marker_87668762b23bdfd75d1a0be8f1497aef = L.marker(
                 [40.3902, -74.3903],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_07bf3a2b6d55796a710d75737dca7055 = L.AwesomeMarkers.icon(
+            var icon_8f6005415605aab52cac6639a0efb74c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_8e8d3ac2e5392bdba2dd5a491d630de3.setIcon(icon_07bf3a2b6d55796a710d75737dca7055);
+            marker_87668762b23bdfd75d1a0be8f1497aef.setIcon(icon_8f6005415605aab52cac6639a0efb74c);
         
     
-            marker_8e8d3ac2e5392bdba2dd5a491d630de3.bindTooltip(
+            marker_87668762b23bdfd75d1a0be8f1497aef.bindTooltip(
                 `<div>
-                     Upper Mill Site: The plantation of Chief Weequahala.
+                     The plantation of Chief Weequahala.
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_5bf4e381ebe7d35afb9a8d3f1a79f5fe = L.marker(
+            var marker_49dc2bfd83f784c0f9403ee4a7936058 = L.marker(
+                [40.3902, -74.3903],
+                {}
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
+        
+    
+            var div_icon_3ecb62ccb8961b0c7d79d9a9314a33c3 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Upper Mill Site\n                \u003c/div\u003e\n            "});
+            marker_49dc2bfd83f784c0f9403ee4a7936058.setIcon(div_icon_3ecb62ccb8961b0c7d79d9a9314a33c3);
+        
+    
+            var marker_e9915edbdd46cce5b115494cfb1e9638 = L.marker(
                 [40.3804, -74.4084],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_5b4d3fe148c84072dc541a2d50a8d232 = L.AwesomeMarkers.icon(
+            var icon_e167297c246b56e6013f475940052dbf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_5bf4e381ebe7d35afb9a8d3f1a79f5fe.setIcon(icon_5b4d3fe148c84072dc541a2d50a8d232);
+            marker_e9915edbdd46cce5b115494cfb1e9638.setIcon(icon_e167297c246b56e6013f475940052dbf);
         
     
-            marker_5bf4e381ebe7d35afb9a8d3f1a79f5fe.bindTooltip(
+            marker_e9915edbdd46cce5b115494cfb1e9638.bindTooltip(
                 `<div>
-                     Lower Mill Site: Often referred to as the 'Old Indian Dam'.
+                     Often referred to as the 'Old Indian Dam'.
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_c7bf94980c910945a7661623027e69bd = L.marker(
+            var marker_02f9f09310ff561876cc78583e01b4e4 = L.marker(
+                [40.3804, -74.4084],
+                {}
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
+        
+    
+            var div_icon_15e27507f9cd06b1ea1d4a768d1ef364 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Lower Mill Site\n                \u003c/div\u003e\n            "});
+            marker_02f9f09310ff561876cc78583e01b4e4.setIcon(div_icon_15e27507f9cd06b1ea1d4a768d1ef364);
+        
+    
+            var marker_9a950c1cffbc4eaea858105ab40710d3 = L.marker(
                 [40.382, -74.3935],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_9d5ede19444bba0647a614d3a7a6fcd0 = L.AwesomeMarkers.icon(
+            var icon_3bf572f65263766d28dd10cb2eab437b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_c7bf94980c910945a7661623027e69bd.setIcon(icon_9d5ede19444bba0647a614d3a7a6fcd0);
+            marker_9a950c1cffbc4eaea858105ab40710d3.setIcon(icon_3bf572f65263766d28dd10cb2eab437b);
         
     
-            marker_c7bf94980c910945a7661623027e69bd.bindTooltip(
+            marker_9a950c1cffbc4eaea858105ab40710d3.bindTooltip(
                 `<div>
-                     Slab/Indian Bridge: Slab/Indian Bridge established in 1725.
+                     Slab/Indian Bridge established in 1725.
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_a66100e68c6b9a6884b6c8358ba814dc = L.marker(
-                [40.381, -74.4096],
+            var marker_15a5980f038145d4a1edd6ea43b0757c = L.marker(
+                [40.382, -74.3935],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_5333592e25a7c380572cccf910fda340 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_a66100e68c6b9a6884b6c8358ba814dc.setIcon(icon_5333592e25a7c380572cccf910fda340);
+            var div_icon_0b2f87636b61d9902400b3b028620936 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Slab/Indian Bridge\n                \u003c/div\u003e\n            "});
+            marker_15a5980f038145d4a1edd6ea43b0757c.setIcon(div_icon_0b2f87636b61d9902400b3b028620936);
         
     
-            marker_a66100e68c6b9a6884b6c8358ba814dc.bindTooltip(
-                `<div>
-                     Outcalt's Mill: Outcalt's Mill established in 1830.
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_5a2a84e597815dfe445140a70348244d = L.marker(
+            var marker_21a4b22cd573c4b20feffd788a3ad4ba = L.marker(
                 [40.3691, -74.4271],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_50579e2f44e098ba0912f2714e11a1bc = L.AwesomeMarkers.icon(
+            var icon_a536d1a1ee12bd898685608b88d8c149 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_5a2a84e597815dfe445140a70348244d.setIcon(icon_50579e2f44e098ba0912f2714e11a1bc);
+            marker_21a4b22cd573c4b20feffd788a3ad4ba.setIcon(icon_a536d1a1ee12bd898685608b88d8c149);
         
     
-            marker_5a2a84e597815dfe445140a70348244d.bindTooltip(
+            marker_21a4b22cd573c4b20feffd788a3ad4ba.bindTooltip(
                 `<div>
-                     Weequehea Forest: Weequehea Forest, significant in local history.
+                     Weequehea Forest, significant in local history.
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_3b997178be022b9ac441b62f9f92ea71 = L.marker(
+            var marker_6f390621df812d48ad489db10324a2b5 = L.marker(
+                [40.3691, -74.4271],
+                {}
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
+        
+    
+            var div_icon_7c55c7ab05d198543d43c996f9e1e8ff = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Weequehea Forest\n                \u003c/div\u003e\n            "});
+            marker_6f390621df812d48ad489db10324a2b5.setIcon(div_icon_7c55c7ab05d198543d43c996f9e1e8ff);
+        
+    
+            var marker_1897f5233f50a8302cd228dd30bfc4f9 = L.marker(
                 [40.378, -74.3934],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
         
     
-            var icon_05c4a1521e9854a32ee552b608db2dc9 = L.AwesomeMarkers.icon(
+            var icon_236046e72b529ebc10cfd853b5e45ef9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_3b997178be022b9ac441b62f9f92ea71.setIcon(icon_05c4a1521e9854a32ee552b608db2dc9);
+            marker_1897f5233f50a8302cd228dd30bfc4f9.setIcon(icon_236046e72b529ebc10cfd853b5e45ef9);
         
     
-            marker_3b997178be022b9ac441b62f9f92ea71.bindTooltip(
+            marker_1897f5233f50a8302cd228dd30bfc4f9.bindTooltip(
                 `<div>
-                     Weequahela's Pond: Weequahela's Pond found in 2002 Topographical map.
+                     Weequahela's Pond found in 2002 Topographical map.
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_243a0f298a8025cfaa5789bdce9a1ee9 = L.marker(
+            var marker_a43ee72b80357d8f63b2cfa757aee8f1 = L.marker(
+                [40.378, -74.3934],
+                {}
+            ).addTo(feature_group_bd17324e23eb82c718ef0529466004c6);
+        
+    
+            var div_icon_ccc51db244b757011ff7d50b2d73664f = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Weequahela\u0027s Pond\n                \u003c/div\u003e\n            "});
+            marker_a43ee72b80357d8f63b2cfa757aee8f1.setIcon(div_icon_ccc51db244b757011ff7d50b2d73664f);
+        
+    
+            var feature_group_91add1c2cc8b8154c536cd5bd10ab5b5 = L.featureGroup(
+                {}
+            ).addTo(map_d2913c35cfb77e531fd8e2ffd47dd54e);
+        
+    
+            var marker_edceaa79ece7ebf564a0d1317767adfa = L.marker(
                 [40.3738, -74.4164],
                 {}
-            ).addTo(map_66b71f04d28dc90c57c791fc7e40d774);
+            ).addTo(feature_group_91add1c2cc8b8154c536cd5bd10ab5b5);
         
     
-            var icon_0aae015971439f0cfdd3e0495a93c722 = L.AwesomeMarkers.icon(
+            var icon_95854e2a85f7a4ab02876707477f038e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_243a0f298a8025cfaa5789bdce9a1ee9.setIcon(icon_0aae015971439f0cfdd3e0495a93c722);
+            marker_edceaa79ece7ebf564a0d1317767adfa.setIcon(icon_95854e2a85f7a4ab02876707477f038e);
         
     
-            marker_243a0f298a8025cfaa5789bdce9a1ee9.bindTooltip(
+            marker_edceaa79ece7ebf564a0d1317767adfa.bindTooltip(
                 `<div>
-                     Ten Eyk's Old Forge: Ten Eyks Forge, Old Forge Road's namesake.
+                     Ten Eyks Forge, Old Forge Road's namesake.
                  </div>`,
                 {"sticky": true}
             );
+        
+    
+            var marker_4e16b05a5288bfaf5d5aca0f24cec909 = L.marker(
+                [40.3738, -74.4164],
+                {}
+            ).addTo(feature_group_91add1c2cc8b8154c536cd5bd10ab5b5);
+        
+    
+            var div_icon_7aecc6086d0ad803abe34931f321deaa = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Ten Eyk\u0027s Old Forge\n                \u003c/div\u003e\n            "});
+            marker_4e16b05a5288bfaf5d5aca0f24cec909.setIcon(div_icon_7aecc6086d0ad803abe34931f321deaa);
+        
+    
+            var feature_group_4dfe801ba9fea37cb71d41123a539470 = L.featureGroup(
+                {}
+            ).addTo(map_d2913c35cfb77e531fd8e2ffd47dd54e);
+        
+    
+            var marker_f59f9c573f88358e2ff495c3c0baa59e = L.marker(
+                [40.381, -74.4096],
+                {}
+            ).addTo(feature_group_4dfe801ba9fea37cb71d41123a539470);
+        
+    
+            var icon_e594cbb6db50f005ca9b730a8aa8b300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f59f9c573f88358e2ff495c3c0baa59e.setIcon(icon_e594cbb6db50f005ca9b730a8aa8b300);
+        
+    
+            marker_f59f9c573f88358e2ff495c3c0baa59e.bindTooltip(
+                `<div>
+                     Outcalt's Mill established in 1830.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ec78e09e7763a53b03d347acddf99f1 = L.marker(
+                [40.381, -74.4096],
+                {}
+            ).addTo(feature_group_4dfe801ba9fea37cb71d41123a539470);
+        
+    
+            var div_icon_3340d81c16692eb3469d20a07b9796be = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: white;\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 6px;\n                    text-align: center;\n                    display: inline-block;\n                \"\u003e\n                    Outcalt\u0027s Mill\n                \u003c/div\u003e\n            "});
+            marker_9ec78e09e7763a53b03d347acddf99f1.setIcon(div_icon_3340d81c16692eb3469d20a07b9796be);
+        
+    
+            var layer_control_faa3d7f591455b212cc51bba63f5bb8a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7585fa7866b44684e6db778170269c53,
+                },
+                overlays :  {
+                    "1700-1750" : feature_group_bd17324e23eb82c718ef0529466004c6,
+                    "1751-1800" : feature_group_91add1c2cc8b8154c536cd5bd10ab5b5,
+                    "1801-1850" : feature_group_4dfe801ba9fea37cb71d41123a539470,
+                },
+            };
+            L.control.layers(
+                layer_control_faa3d7f591455b212cc51bba63f5bb8a.base_layers,
+                layer_control_faa3d7f591455b212cc51bba63f5bb8a.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_d2913c35cfb77e531fd8e2ffd47dd54e);
         
 </script>
 </html>
