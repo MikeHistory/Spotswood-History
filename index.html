@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_47ee084ab3626486836914cb822a6825 {
+                #map_93ac606cdd7c14d39aa4aa1480b54cff {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,6 +35,9 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
 <body>
     
@@ -52,18 +55,18 @@
         Spotswood Through the Years
     </h3>
     
-            <div class="folium-map" id="map_47ee084ab3626486836914cb822a6825" ></div>
+            <div class="folium-map" id="map_93ac606cdd7c14d39aa4aa1480b54cff" ></div>
         
 </body>
 <script>
     
     
-            var map_47ee084ab3626486836914cb822a6825 = L.map(
-                "map_47ee084ab3626486836914cb822a6825",
+            var map_93ac606cdd7c14d39aa4aa1480b54cff = L.map(
+                "map_93ac606cdd7c14d39aa4aa1480b54cff",
                 {
                     center: [40.3839, -74.39825],
                     crs: L.CRS.EPSG3857,
-                    zoom: 14,
+                    zoom: 11,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -73,412 +76,474 @@
 
         
     
-            var tile_layer_cafc86143a47975ff0222af6501e1fd3 = L.tileLayer(
+            var tile_layer_deb9804058dcd023d40c5cd682b31c3f = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_47ee084ab3626486836914cb822a6825);
+            ).addTo(map_93ac606cdd7c14d39aa4aa1480b54cff);
         
     
-            var feature_group_143f0c82e1d9d48137c7436d9e7783b2 = L.featureGroup(
+            var feature_group_e21f8e91388a1118966428695b80de64 = L.featureGroup(
                 {}
-            ).addTo(map_47ee084ab3626486836914cb822a6825);
+            ).addTo(map_93ac606cdd7c14d39aa4aa1480b54cff);
         
     
-            var marker_cfd01f8313f93d2feab3a10954cac047 = L.marker(
+            var marker_cluster_e03ece877a8f5b12e871c7b1e646271f = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_e03ece877a8f5b12e871c7b1e646271f);
+        
+    
+            var marker_8acae44ad450705164c1df2fc8632cc7 = L.marker(
                 [40.3902, -74.3903],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_e03ece877a8f5b12e871c7b1e646271f);
         
     
-            var icon_d6a125c81bf06d6371861801e6db9883 = L.AwesomeMarkers.icon(
+            var icon_2c2626a90759232b93026652b3315e4f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_cfd01f8313f93d2feab3a10954cac047.setIcon(icon_d6a125c81bf06d6371861801e6db9883);
+            marker_8acae44ad450705164c1df2fc8632cc7.setIcon(icon_2c2626a90759232b93026652b3315e4f);
         
     
-        var popup_e1eace88f75835fce0d87d83638d01b1 = L.popup({"maxWidth": 250});
+        var popup_f7a150186ad7ecbc05c9008f00a03c6b = L.popup({"maxWidth": 250});
 
         
             
-                var html_245e8d5f081ca364679e04cce64b4522 = $(`<div id="html_245e8d5f081ca364679e04cce64b4522" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequehela's Upper Mill Site</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_0953.jpeg?raw=true' width='200px'><br>         Weequehela's mill was granted to Leonard's widow after his exectution. John Johnson married Margaret Leonard and came into ownership if the mill.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_e1eace88f75835fce0d87d83638d01b1.setContent(html_245e8d5f081ca364679e04cce64b4522);
+                var html_696f5ade710313242f93c9bf9b4790a9 = $(`<div id="html_696f5ade710313242f93c9bf9b4790a9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequehela's Upper Mill Site</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_0953.jpeg?raw=true' width='200px'><br>         Weequehela's mill was granted to Leonard's widow after his exectution. John Johnson married Margaret Leonard and came into ownership if the mill.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_f7a150186ad7ecbc05c9008f00a03c6b.setContent(html_696f5ade710313242f93c9bf9b4790a9);
             
         
 
-        marker_cfd01f8313f93d2feab3a10954cac047.bindPopup(popup_e1eace88f75835fce0d87d83638d01b1)
+        marker_8acae44ad450705164c1df2fc8632cc7.bindPopup(popup_f7a150186ad7ecbc05c9008f00a03c6b)
         ;
 
         
     
     
-            var marker_54c064a9193e4742bc8d45c6cc62586f = L.marker(
+            var marker_f489aaca8acb2a2a5cce638c969385ad = L.marker(
                 [40.39005, -74.39009999999999],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_1457a0c63d9e520c14c800bd1a4dba79 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequehela\u0027s Upper Mill Site\n                \u003c/div\u003e\n            "});
-            marker_54c064a9193e4742bc8d45c6cc62586f.setIcon(div_icon_1457a0c63d9e520c14c800bd1a4dba79);
+            var div_icon_10c428a990f499dee88644a4437148a5 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequehela\u0027s Upper Mill Site\n                \u003c/div\u003e\n            "});
+            marker_f489aaca8acb2a2a5cce638c969385ad.setIcon(div_icon_10c428a990f499dee88644a4437148a5);
         
     
-            var marker_ef4b52ccfd3e6c99ab10d38df5d912f0 = L.marker(
+            var marker_cluster_6959f0e80709fe9305d7e77fa169f498 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_6959f0e80709fe9305d7e77fa169f498);
+        
+    
+            var marker_127f9aa66250cebcf1c0f054d7648f30 = L.marker(
                 [40.3805, -74.4078],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_6959f0e80709fe9305d7e77fa169f498);
         
     
-            var icon_dc0cb7af13b21e53885b496f5a8bccb0 = L.AwesomeMarkers.icon(
+            var icon_759e8c024dd265dcfc22ea1e57cab67f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_ef4b52ccfd3e6c99ab10d38df5d912f0.setIcon(icon_dc0cb7af13b21e53885b496f5a8bccb0);
+            marker_127f9aa66250cebcf1c0f054d7648f30.setIcon(icon_759e8c024dd265dcfc22ea1e57cab67f);
         
     
-        var popup_84b95c11885300e7b4946a24a7edb15c = L.popup({"maxWidth": 250});
+        var popup_89cc21d08c82f1dcddf7b819d2df5585 = L.popup({"maxWidth": 250});
 
         
             
-                var html_a025b81367e208d68f8b9cf1fc976ae3 = $(`<div id="html_a025b81367e208d68f8b9cf1fc976ae3" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>The Indian Dam</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_3345.jpeg?raw=true' width='200px'><br>         Often referred to as the 'Old Indian Dam'.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_84b95c11885300e7b4946a24a7edb15c.setContent(html_a025b81367e208d68f8b9cf1fc976ae3);
+                var html_0cae956ae54127caa4ddc5eadb7d50f8 = $(`<div id="html_0cae956ae54127caa4ddc5eadb7d50f8" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>The Indian Dam</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_3345.jpeg?raw=true' width='200px'><br>         Often referred to as the 'Old Indian Dam'.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_89cc21d08c82f1dcddf7b819d2df5585.setContent(html_0cae956ae54127caa4ddc5eadb7d50f8);
             
         
 
-        marker_ef4b52ccfd3e6c99ab10d38df5d912f0.bindPopup(popup_84b95c11885300e7b4946a24a7edb15c)
+        marker_127f9aa66250cebcf1c0f054d7648f30.bindPopup(popup_89cc21d08c82f1dcddf7b819d2df5585)
         ;
 
         
     
     
-            var marker_c5adfa6a186bc3c715ffbc404a50794a = L.marker(
+            var marker_6e1043f2ec3573c2658d2285fc4f1315 = L.marker(
                 [40.38035, -74.40759999999999],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_22968397482e9aec656fc2ba35020cb7 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    The Indian Dam\n                \u003c/div\u003e\n            "});
-            marker_c5adfa6a186bc3c715ffbc404a50794a.setIcon(div_icon_22968397482e9aec656fc2ba35020cb7);
+            var div_icon_1de2d469c246dd21cccf11b2e567dadb = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    The Indian Dam\n                \u003c/div\u003e\n            "});
+            marker_6e1043f2ec3573c2658d2285fc4f1315.setIcon(div_icon_1de2d469c246dd21cccf11b2e567dadb);
         
     
-            var marker_6da4720d8ac0b01649d4cee071453e94 = L.marker(
+            var marker_cluster_cfbab86ad198a4a2612561c819a2ccab = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_cfbab86ad198a4a2612561c819a2ccab);
+        
+    
+            var marker_dd51bdaceda0dcfd067dce9d52bb236d = L.marker(
                 [40.382, -74.3935],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_cfbab86ad198a4a2612561c819a2ccab);
         
     
-            var icon_30f2afa66916d3da74608abda82f8892 = L.AwesomeMarkers.icon(
+            var icon_9ad28cbe7b230c22a589c470ba2ebebd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_6da4720d8ac0b01649d4cee071453e94.setIcon(icon_30f2afa66916d3da74608abda82f8892);
+            marker_dd51bdaceda0dcfd067dce9d52bb236d.setIcon(icon_9ad28cbe7b230c22a589c470ba2ebebd);
         
     
-        var popup_d984fc659a99edb7ffa23292e387e2bf = L.popup({"maxWidth": 250});
+        var popup_fd4e38edd9690cbb8b256d3448fd6a7b = L.popup({"maxWidth": 250});
 
         
             
-                var html_35e59dc59529dab90d0f295b9493972b = $(`<div id="html_35e59dc59529dab90d0f295b9493972b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Slab/Indian Bridge</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_2292.jpeg?raw=true' width='200px'><br>         Coulhous/Slab Bridge<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_d984fc659a99edb7ffa23292e387e2bf.setContent(html_35e59dc59529dab90d0f295b9493972b);
+                var html_28cb4fd1abb294b1a5e4168ae317429a = $(`<div id="html_28cb4fd1abb294b1a5e4168ae317429a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Slab/Indian Bridge</b><br>         <img src='https://github.com/MikeHistory/Spotswood-History/blob/main/images/IMG_2292.jpeg?raw=true' width='200px'><br>         Coulhous/Slab Bridge<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_fd4e38edd9690cbb8b256d3448fd6a7b.setContent(html_28cb4fd1abb294b1a5e4168ae317429a);
             
         
 
-        marker_6da4720d8ac0b01649d4cee071453e94.bindPopup(popup_d984fc659a99edb7ffa23292e387e2bf)
+        marker_dd51bdaceda0dcfd067dce9d52bb236d.bindPopup(popup_fd4e38edd9690cbb8b256d3448fd6a7b)
         ;
 
         
     
     
-            var marker_7661f6d42c4396f5573886a4d4f8e98f = L.marker(
+            var marker_12265be15a7e32255084c917ab2ae31c = L.marker(
                 [40.38185, -74.3933],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_8e935643d1d6d126b3c4cb9ebaf9ae8c = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Slab/Indian Bridge\n                \u003c/div\u003e\n            "});
-            marker_7661f6d42c4396f5573886a4d4f8e98f.setIcon(div_icon_8e935643d1d6d126b3c4cb9ebaf9ae8c);
+            var div_icon_5144ae3e606b5f20918403a18025e2b9 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Slab/Indian Bridge\n                \u003c/div\u003e\n            "});
+            marker_12265be15a7e32255084c917ab2ae31c.setIcon(div_icon_5144ae3e606b5f20918403a18025e2b9);
         
     
-            var marker_755eba51053eeb1a9633ad5ab5fefbf9 = L.marker(
+            var marker_cluster_6a28db8e9152d13f5d38975f1903089f = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_6a28db8e9152d13f5d38975f1903089f);
+        
+    
+            var marker_061fadf8059f0c49d5776f18dba7d95b = L.marker(
                 [40.3691, -74.4271],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_6a28db8e9152d13f5d38975f1903089f);
         
     
-            var icon_b81f3bb09123fd895c5d18e18d47cfe0 = L.AwesomeMarkers.icon(
+            var icon_ab320c0ff7eb29bd313425ed3a93e184 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_755eba51053eeb1a9633ad5ab5fefbf9.setIcon(icon_b81f3bb09123fd895c5d18e18d47cfe0);
+            marker_061fadf8059f0c49d5776f18dba7d95b.setIcon(icon_ab320c0ff7eb29bd313425ed3a93e184);
         
     
-        var popup_6b8b5fd2d1d7eb9100320fc3f502e2a3 = L.popup({"maxWidth": 250});
+        var popup_5ac1edb63f75308bb967962e7aa9ae0c = L.popup({"maxWidth": 250});
 
         
             
-                var html_9800c4795690295bdbedc582683e380e = $(`<div id="html_9800c4795690295bdbedc582683e380e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequehea Forest</b><br>         <img src='https://example.com/image5.jpg' width='200px'><br>         Weequehea Forest, significant in local history.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_6b8b5fd2d1d7eb9100320fc3f502e2a3.setContent(html_9800c4795690295bdbedc582683e380e);
+                var html_9c4a8f58cf63331b0916c76376481437 = $(`<div id="html_9c4a8f58cf63331b0916c76376481437" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequehea Forest</b><br>         <img src='https://example.com/image5.jpg' width='200px'><br>         Weequehea Forest, significant in local history.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_5ac1edb63f75308bb967962e7aa9ae0c.setContent(html_9c4a8f58cf63331b0916c76376481437);
             
         
 
-        marker_755eba51053eeb1a9633ad5ab5fefbf9.bindPopup(popup_6b8b5fd2d1d7eb9100320fc3f502e2a3)
+        marker_061fadf8059f0c49d5776f18dba7d95b.bindPopup(popup_5ac1edb63f75308bb967962e7aa9ae0c)
         ;
 
         
     
     
-            var marker_08c59ef61c1f30992cf289215523d352 = L.marker(
+            var marker_99ae2cb0a1dcfcffd65436cd7400456f = L.marker(
                 [40.368950000000005, -74.42689999999999],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_abbb32d1e9a6ca0ae1e60a708f3d84b6 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequehea Forest\n                \u003c/div\u003e\n            "});
-            marker_08c59ef61c1f30992cf289215523d352.setIcon(div_icon_abbb32d1e9a6ca0ae1e60a708f3d84b6);
+            var div_icon_7f10845db551a90fd9e207d7f9f18f42 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequehea Forest\n                \u003c/div\u003e\n            "});
+            marker_99ae2cb0a1dcfcffd65436cd7400456f.setIcon(div_icon_7f10845db551a90fd9e207d7f9f18f42);
         
     
-            var marker_6027e51328dd5defcc6f1dc8e0cf793a = L.marker(
+            var marker_cluster_229442f07ecddc6422558ec35ced8d6f = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_229442f07ecddc6422558ec35ced8d6f);
+        
+    
+            var marker_bd0eece84a359732b949d4e5c45724c8 = L.marker(
                 [40.378, -74.3934],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_229442f07ecddc6422558ec35ced8d6f);
         
     
-            var icon_9968826b86a8d6516f279372067813cb = L.AwesomeMarkers.icon(
+            var icon_d3eb90dfe558e50db01dc634e62d73e0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_6027e51328dd5defcc6f1dc8e0cf793a.setIcon(icon_9968826b86a8d6516f279372067813cb);
+            marker_bd0eece84a359732b949d4e5c45724c8.setIcon(icon_d3eb90dfe558e50db01dc634e62d73e0);
         
     
-        var popup_a098fbbcabd5ea1c74fdb4d30aeebdea = L.popup({"maxWidth": 250});
+        var popup_4202cd180dffd711c41c27054b29917c = L.popup({"maxWidth": 250});
 
         
             
-                var html_62c13d1ebe0bded78d12d598317121b9 = $(`<div id="html_62c13d1ebe0bded78d12d598317121b9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequahela's Pond</b><br>         <img src='https://example.com/image6.jpg' width='200px'><br>         Weequahela's Pond found in 2002 Topographical map.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_a098fbbcabd5ea1c74fdb4d30aeebdea.setContent(html_62c13d1ebe0bded78d12d598317121b9);
+                var html_9aba664305c647585e5a40029d57d21d = $(`<div id="html_9aba664305c647585e5a40029d57d21d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Weequahela's Pond</b><br>         <img src='https://example.com/image6.jpg' width='200px'><br>         Weequahela's Pond found in 2002 Topographical map.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_4202cd180dffd711c41c27054b29917c.setContent(html_9aba664305c647585e5a40029d57d21d);
             
         
 
-        marker_6027e51328dd5defcc6f1dc8e0cf793a.bindPopup(popup_a098fbbcabd5ea1c74fdb4d30aeebdea)
+        marker_bd0eece84a359732b949d4e5c45724c8.bindPopup(popup_4202cd180dffd711c41c27054b29917c)
         ;
 
         
     
     
-            var marker_fb23e320a8729131f62660a24c7faad1 = L.marker(
+            var marker_d6e66c196c886a579dedd0619e0f1c16 = L.marker(
                 [40.37785, -74.3932],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_7173b8943b7aaa21b60067af4fb6f654 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequahela\u0027s Pond\n                \u003c/div\u003e\n            "});
-            marker_fb23e320a8729131f62660a24c7faad1.setIcon(div_icon_7173b8943b7aaa21b60067af4fb6f654);
+            var div_icon_9b2b070e3b55ccfe87465201e1ec4746 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Weequahela\u0027s Pond\n                \u003c/div\u003e\n            "});
+            marker_d6e66c196c886a579dedd0619e0f1c16.setIcon(div_icon_9b2b070e3b55ccfe87465201e1ec4746);
         
     
-            var marker_117cc7935eac001949809d69895886c9 = L.marker(
+            var marker_cluster_8fc537af61efc9c14d6d80ba43c733b8 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_8fc537af61efc9c14d6d80ba43c733b8);
+        
+    
+            var marker_21472e756f3a2badc858a5ac34eb1e2a = L.marker(
                 [40.4141, -74.3662],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_8fc537af61efc9c14d6d80ba43c733b8);
         
     
-            var icon_39263c3fa09940eda1611d2849df80f8 = L.AwesomeMarkers.icon(
+            var icon_873af0d7f876bbe55a9dbdb3437f0a31 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_117cc7935eac001949809d69895886c9.setIcon(icon_39263c3fa09940eda1611d2849df80f8);
+            marker_21472e756f3a2badc858a5ac34eb1e2a.setIcon(icon_873af0d7f876bbe55a9dbdb3437f0a31);
         
     
-        var popup_5ba82ca723be4ce51e7ca051bf48d994 = L.popup({"maxWidth": 250});
+        var popup_5e07b4412b28b469be2e7995a7c66dbe = L.popup({"maxWidth": 250});
 
         
             
-                var html_791c67bc6e5675c84cc8dbe6b2ffeda4 = $(`<div id="html_791c67bc6e5675c84cc8dbe6b2ffeda4" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Capt. John Leonard's Tavern</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         The tavern at the South River crossing operated by Leonard. Weequehala murdered Leonard here, in his yard. Now the Village Deli.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_5ba82ca723be4ce51e7ca051bf48d994.setContent(html_791c67bc6e5675c84cc8dbe6b2ffeda4);
+                var html_be7c0c848ff348a13ddaed00bbf3bf82 = $(`<div id="html_be7c0c848ff348a13ddaed00bbf3bf82" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Capt. John Leonard's Tavern</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         The tavern at the South River crossing operated by Leonard. Weequehala murdered Leonard here, in his yard. Now the Village Deli.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_5e07b4412b28b469be2e7995a7c66dbe.setContent(html_be7c0c848ff348a13ddaed00bbf3bf82);
             
         
 
-        marker_117cc7935eac001949809d69895886c9.bindPopup(popup_5ba82ca723be4ce51e7ca051bf48d994)
+        marker_21472e756f3a2badc858a5ac34eb1e2a.bindPopup(popup_5e07b4412b28b469be2e7995a7c66dbe)
         ;
 
         
     
     
-            var marker_f51a7c00153e86d661d3eb0fc5e90e5a = L.marker(
+            var marker_e3e525d7f4473fd72529a196e313fc38 = L.marker(
                 [40.41395, -74.366],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_25317014b828f3994f0ae1997ab5881f = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Capt. John Leonard\u0027s Tavern\n                \u003c/div\u003e\n            "});
-            marker_f51a7c00153e86d661d3eb0fc5e90e5a.setIcon(div_icon_25317014b828f3994f0ae1997ab5881f);
+            var div_icon_29d468217b2af0055e058ed19c3cf1c9 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Capt. John Leonard\u0027s Tavern\n                \u003c/div\u003e\n            "});
+            marker_e3e525d7f4473fd72529a196e313fc38.setIcon(div_icon_29d468217b2af0055e058ed19c3cf1c9);
         
     
-            var marker_019ddf7a74dd45242c6fd3d66bfaa232 = L.marker(
+            var marker_cluster_a9014cd6b773b291d9524a87394e6ade = L.markerClusterGroup(
+                {}
+            );
+            feature_group_e21f8e91388a1118966428695b80de64.addLayer(marker_cluster_a9014cd6b773b291d9524a87394e6ade);
+        
+    
+            var marker_53465c84ab1013f42475210f3b549abd = L.marker(
                 [40.4141, -74.3662],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(marker_cluster_a9014cd6b773b291d9524a87394e6ade);
         
     
-            var icon_7b19da01060da510f484c36f8b84bbe9 = L.AwesomeMarkers.icon(
+            var icon_bc6e3605a28e5501d68ea0bbbe702d29 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_019ddf7a74dd45242c6fd3d66bfaa232.setIcon(icon_7b19da01060da510f484c36f8b84bbe9);
+            marker_53465c84ab1013f42475210f3b549abd.setIcon(icon_bc6e3605a28e5501d68ea0bbbe702d29);
         
     
-        var popup_c6376973186fb760021df4d71649fc63 = L.popup({"maxWidth": 250});
+        var popup_659f1354f8d873e74bc3018cf5acd85f = L.popup({"maxWidth": 250});
 
         
             
-                var html_677828b3ba544ff18d6b1c448a4c5cd3 = $(`<div id="html_677828b3ba544ff18d6b1c448a4c5cd3" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Capt. John Leonard's Tavern</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         The tavern at the South River crossing operated by Leonard. Weequehala murdered Leonard here, in his yard. Now the Village Deli.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
-                popup_c6376973186fb760021df4d71649fc63.setContent(html_677828b3ba544ff18d6b1c448a4c5cd3);
+                var html_297a8a7ba51b5353ec9a52198e6c3c46 = $(`<div id="html_297a8a7ba51b5353ec9a52198e6c3c46" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Capt. John Leonard's Tavern</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         The tavern at the South River crossing operated by Leonard. Weequehala murdered Leonard here, in his yard. Now the Village Deli.<br><br>         <i>Time Period: 1700-1730</i>     </div>     </div>`)[0];
+                popup_659f1354f8d873e74bc3018cf5acd85f.setContent(html_297a8a7ba51b5353ec9a52198e6c3c46);
             
         
 
-        marker_019ddf7a74dd45242c6fd3d66bfaa232.bindPopup(popup_c6376973186fb760021df4d71649fc63)
+        marker_53465c84ab1013f42475210f3b549abd.bindPopup(popup_659f1354f8d873e74bc3018cf5acd85f)
         ;
 
         
     
     
-            var marker_cd7111a3f7979ddc1870f38fa74b257f = L.marker(
+            var marker_483c8ecd3fc6381ecdc7bc7d72d76bfa = L.marker(
                 [40.41395, -74.366],
                 {}
-            ).addTo(feature_group_143f0c82e1d9d48137c7436d9e7783b2);
+            ).addTo(feature_group_e21f8e91388a1118966428695b80de64);
         
     
-            var div_icon_9a0f630ee0e5e2f8c3ce88f3151a70e9 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Capt. John Leonard\u0027s Tavern\n                \u003c/div\u003e\n            "});
-            marker_cd7111a3f7979ddc1870f38fa74b257f.setIcon(div_icon_9a0f630ee0e5e2f8c3ce88f3151a70e9);
+            var div_icon_2394cf99227a3f8eb531fb4016306db3 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Capt. John Leonard\u0027s Tavern\n                \u003c/div\u003e\n            "});
+            marker_483c8ecd3fc6381ecdc7bc7d72d76bfa.setIcon(div_icon_2394cf99227a3f8eb531fb4016306db3);
         
     
-            var feature_group_f8f26f4369e85b697df6c7cf84c27717 = L.featureGroup(
+            var feature_group_bd891d4c45caf543373f128af876a050 = L.featureGroup(
                 {}
-            ).addTo(map_47ee084ab3626486836914cb822a6825);
+            ).addTo(map_93ac606cdd7c14d39aa4aa1480b54cff);
         
     
-            var marker_93e5854530037473049eba956e622078 = L.marker(
+            var marker_cluster_9de417f814f94bde5daf27e40f8e21ac = L.markerClusterGroup(
+                {}
+            );
+            feature_group_bd891d4c45caf543373f128af876a050.addLayer(marker_cluster_9de417f814f94bde5daf27e40f8e21ac);
+        
+    
+            var marker_123e46d9c94c60d2726e791c26e5c0fa = L.marker(
                 [40.3738, -74.4164],
                 {}
-            ).addTo(feature_group_f8f26f4369e85b697df6c7cf84c27717);
+            ).addTo(marker_cluster_9de417f814f94bde5daf27e40f8e21ac);
         
     
-            var icon_832801a4392349a680a1b288794cdf33 = L.AwesomeMarkers.icon(
+            var icon_c75019cf21e7a8084bb5557b354b950c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_93e5854530037473049eba956e622078.setIcon(icon_832801a4392349a680a1b288794cdf33);
+            marker_123e46d9c94c60d2726e791c26e5c0fa.setIcon(icon_c75019cf21e7a8084bb5557b354b950c);
         
     
-        var popup_699ed6c24407a1ac6a98ea377773d445 = L.popup({"maxWidth": 250});
+        var popup_73cbe940eeaead54e8f111852c0cbd32 = L.popup({"maxWidth": 250});
 
         
             
-                var html_ee4f6f2a8cb01e7ed38aa07607faf9a9 = $(`<div id="html_ee4f6f2a8cb01e7ed38aa07607faf9a9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Ten Eyk's Old Forge</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         Ten Eyks Forge, Old Forge Road's namesake.<br><br>         <i>Time Period: 1731-1800</i>     </div>     </div>`)[0];
-                popup_699ed6c24407a1ac6a98ea377773d445.setContent(html_ee4f6f2a8cb01e7ed38aa07607faf9a9);
+                var html_7cef630aaf0fde90067c6e5e22d451d0 = $(`<div id="html_7cef630aaf0fde90067c6e5e22d451d0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Ten Eyk's Old Forge</b><br>         <img src='https://example.com/image7.jpg' width='200px'><br>         Ten Eyks Forge, Old Forge Road's namesake.<br><br>         <i>Time Period: 1731-1800</i>     </div>     </div>`)[0];
+                popup_73cbe940eeaead54e8f111852c0cbd32.setContent(html_7cef630aaf0fde90067c6e5e22d451d0);
             
         
 
-        marker_93e5854530037473049eba956e622078.bindPopup(popup_699ed6c24407a1ac6a98ea377773d445)
+        marker_123e46d9c94c60d2726e791c26e5c0fa.bindPopup(popup_73cbe940eeaead54e8f111852c0cbd32)
         ;
 
         
     
     
-            var marker_994d19ac87f9b68a4b6fe908335df83d = L.marker(
+            var marker_c88fcc2188b621ac190ff9030918fd29 = L.marker(
                 [40.3738, -74.4164],
                 {}
-            ).addTo(feature_group_f8f26f4369e85b697df6c7cf84c27717);
+            ).addTo(feature_group_bd891d4c45caf543373f128af876a050);
         
     
-            var div_icon_fcbf64659f4a69519f161d80428dfa99 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Ten Eyk\u0027s Old Forge\n                \u003c/div\u003e\n            "});
-            marker_994d19ac87f9b68a4b6fe908335df83d.setIcon(div_icon_fcbf64659f4a69519f161d80428dfa99);
+            var div_icon_a4f8a7192611e5be71f0764d66985f5b = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Ten Eyk\u0027s Old Forge\n                \u003c/div\u003e\n            "});
+            marker_c88fcc2188b621ac190ff9030918fd29.setIcon(div_icon_a4f8a7192611e5be71f0764d66985f5b);
         
     
-            var marker_665a49f9cf6b70cc56be175cf85c284b = L.marker(
+            var marker_cluster_693e2466b3ebcdbfa77f56d6e4703b0f = L.markerClusterGroup(
+                {}
+            );
+            feature_group_bd891d4c45caf543373f128af876a050.addLayer(marker_cluster_693e2466b3ebcdbfa77f56d6e4703b0f);
+        
+    
+            var marker_d2de0636e73e7f85552075fdb5e19a64 = L.marker(
                 [40.3909, -74.3892],
                 {}
-            ).addTo(feature_group_f8f26f4369e85b697df6c7cf84c27717);
+            ).addTo(marker_cluster_693e2466b3ebcdbfa77f56d6e4703b0f);
         
     
-            var icon_8a22150caa7c587201477ac82c68678f = L.AwesomeMarkers.icon(
+            var icon_376b0ca62372cf6c364e0f7ed5d7bfdd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_665a49f9cf6b70cc56be175cf85c284b.setIcon(icon_8a22150caa7c587201477ac82c68678f);
+            marker_d2de0636e73e7f85552075fdb5e19a64.setIcon(icon_376b0ca62372cf6c364e0f7ed5d7bfdd);
         
     
-        var popup_0a667f91945b667b35f884e0231c1098 = L.popup({"maxWidth": 250});
+        var popup_4132ecf357b416d860299f5bc528bc33 = L.popup({"maxWidth": 250});
 
         
             
-                var html_ba9cb1e8ae4e7cde9c06465bd8c37c33 = $(`<div id="html_ba9cb1e8ae4e7cde9c06465bd8c37c33" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>St. Peter's Church</b><br>         <img src='https://example.com/image8.jpg' width='200px'><br>         First church in town, records date back to 1740's<br><br>         <i>Time Period: 1731-1800</i>     </div>     </div>`)[0];
-                popup_0a667f91945b667b35f884e0231c1098.setContent(html_ba9cb1e8ae4e7cde9c06465bd8c37c33);
+                var html_2aca19a6537498a7ff48f3de592b698e = $(`<div id="html_2aca19a6537498a7ff48f3de592b698e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>St. Peter's Church</b><br>         <img src='https://example.com/image8.jpg' width='200px'><br>         First church in town, records date back to 1740's<br><br>         <i>Time Period: 1731-1800</i>     </div>     </div>`)[0];
+                popup_4132ecf357b416d860299f5bc528bc33.setContent(html_2aca19a6537498a7ff48f3de592b698e);
             
         
 
-        marker_665a49f9cf6b70cc56be175cf85c284b.bindPopup(popup_0a667f91945b667b35f884e0231c1098)
+        marker_d2de0636e73e7f85552075fdb5e19a64.bindPopup(popup_4132ecf357b416d860299f5bc528bc33)
         ;
 
         
     
     
-            var marker_db4610030d1f19522d84f54966c56f79 = L.marker(
+            var marker_1ac310e7a87942fa6f728d67795bd7d2 = L.marker(
                 [40.3909, -74.3892],
                 {}
-            ).addTo(feature_group_f8f26f4369e85b697df6c7cf84c27717);
+            ).addTo(feature_group_bd891d4c45caf543373f128af876a050);
         
     
-            var div_icon_7c258e6bea792faa231ad0727eff4851 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    St. Peter\u0027s Church\n                \u003c/div\u003e\n            "});
-            marker_db4610030d1f19522d84f54966c56f79.setIcon(div_icon_7c258e6bea792faa231ad0727eff4851);
+            var div_icon_30285fab0993530fa35a858e7f325f0e = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    St. Peter\u0027s Church\n                \u003c/div\u003e\n            "});
+            marker_1ac310e7a87942fa6f728d67795bd7d2.setIcon(div_icon_30285fab0993530fa35a858e7f325f0e);
         
     
-            var feature_group_f06dc42938b49ca7c9a2b7b31d2e7a1d = L.featureGroup(
+            var feature_group_1e9b525a4f719faf5d25a74921344c65 = L.featureGroup(
                 {}
-            ).addTo(map_47ee084ab3626486836914cb822a6825);
+            ).addTo(map_93ac606cdd7c14d39aa4aa1480b54cff);
         
     
-            var marker_6eef77329f7289689900440ef82c0168 = L.marker(
+            var marker_cluster_e56ab630c6d1c978d9a3a08d9bdd0ebd = L.markerClusterGroup(
+                {}
+            );
+            feature_group_1e9b525a4f719faf5d25a74921344c65.addLayer(marker_cluster_e56ab630c6d1c978d9a3a08d9bdd0ebd);
+        
+    
+            var marker_8482d3f8a5a62f60e662fe29d18a365e = L.marker(
                 [40.3808, -74.4079],
                 {}
-            ).addTo(feature_group_f06dc42938b49ca7c9a2b7b31d2e7a1d);
+            ).addTo(marker_cluster_e56ab630c6d1c978d9a3a08d9bdd0ebd);
         
     
-            var icon_1f0c2f25bfb46454c5376311b9963301 = L.AwesomeMarkers.icon(
+            var icon_05c52bdfb8712b8bd5235f313b684884 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6eef77329f7289689900440ef82c0168.setIcon(icon_1f0c2f25bfb46454c5376311b9963301);
+            marker_8482d3f8a5a62f60e662fe29d18a365e.setIcon(icon_05c52bdfb8712b8bd5235f313b684884);
         
     
-        var popup_d2d13ac075214d1964da3c4411ff86c7 = L.popup({"maxWidth": 250});
+        var popup_7f6090d24c7420f35b8a9114642ab4f1 = L.popup({"maxWidth": 250});
 
         
             
-                var html_33a140876518dfc3cba2da6276c7433a = $(`<div id="html_33a140876518dfc3cba2da6276c7433a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Outcalt's Mill</b><br>         <img src='https://example.com/image3.jpg' width='200px'><br>         Outcalt's Mill established in 1830.<br><br>         <i>Time Period: 1801-1850</i>     </div>     </div>`)[0];
-                popup_d2d13ac075214d1964da3c4411ff86c7.setContent(html_33a140876518dfc3cba2da6276c7433a);
+                var html_df3e6583dee770af0c0a54865cef9699 = $(`<div id="html_df3e6583dee770af0c0a54865cef9699" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">         <b>Outcalt's Mill</b><br>         <img src='https://example.com/image3.jpg' width='200px'><br>         Outcalt's Mill established in 1830.<br><br>         <i>Time Period: 1801-1850</i>     </div>     </div>`)[0];
+                popup_7f6090d24c7420f35b8a9114642ab4f1.setContent(html_df3e6583dee770af0c0a54865cef9699);
             
         
 
-        marker_6eef77329f7289689900440ef82c0168.bindPopup(popup_d2d13ac075214d1964da3c4411ff86c7)
+        marker_8482d3f8a5a62f60e662fe29d18a365e.bindPopup(popup_7f6090d24c7420f35b8a9114642ab4f1)
         ;
 
         
     
     
-            var marker_fb3ced6aa29a4d11b130fdd572de1118 = L.marker(
+            var marker_1bed0a6796f6afdbd14d1e0222377f1e = L.marker(
                 [40.38095, -74.40814999999999],
                 {}
-            ).addTo(feature_group_f06dc42938b49ca7c9a2b7b31d2e7a1d);
+            ).addTo(feature_group_1e9b525a4f719faf5d25a74921344c65);
         
     
-            var div_icon_91a4501714950b448229ba40eba04dd5 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Outcalt\u0027s Mill\n                \u003c/div\u003e\n            "});
-            marker_fb3ced6aa29a4d11b130fdd572de1118.setIcon(div_icon_91a4501714950b448229ba40eba04dd5);
+            var div_icon_bdd7be1581da8e4f8bc43c5e271d1dfa = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    font-size: 10px;\n                    font-weight: bold;\n                    color: black;\n                    background-color: rgba(255, 255, 255, 0.2);\n                    border: 1px solid black;\n                    border-radius: 3px;\n                    padding: 2px 4px;\n                    text-align: center;\n                    display: inline-block;\n                    white-space: nowrap;\n                    z-index: 1000;\n                \"\u003e\n                    Outcalt\u0027s Mill\n                \u003c/div\u003e\n            "});
+            marker_1bed0a6796f6afdbd14d1e0222377f1e.setIcon(div_icon_bdd7be1581da8e4f8bc43c5e271d1dfa);
         
     
-            var layer_control_201340eda68ac71040257ca9999f8b7c = {
+            var layer_control_bb4b6dd37654317d23079d786950741b = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_cafc86143a47975ff0222af6501e1fd3,
+                    "openstreetmap" : tile_layer_deb9804058dcd023d40c5cd682b31c3f,
                 },
                 overlays :  {
-                    "1700-1730" : feature_group_143f0c82e1d9d48137c7436d9e7783b2,
-                    "1731-1800" : feature_group_f8f26f4369e85b697df6c7cf84c27717,
-                    "1801-1850" : feature_group_f06dc42938b49ca7c9a2b7b31d2e7a1d,
+                    "1700-1730" : feature_group_e21f8e91388a1118966428695b80de64,
+                    "1731-1800" : feature_group_bd891d4c45caf543373f128af876a050,
+                    "1801-1850" : feature_group_1e9b525a4f719faf5d25a74921344c65,
                 },
             };
             L.control.layers(
-                layer_control_201340eda68ac71040257ca9999f8b7c.base_layers,
-                layer_control_201340eda68ac71040257ca9999f8b7c.overlays,
+                layer_control_bb4b6dd37654317d23079d786950741b.base_layers,
+                layer_control_bb4b6dd37654317d23079d786950741b.overlays,
                 {"autoZIndex": true, "collapsed": false, "position": "topright"}
-            ).addTo(map_47ee084ab3626486836914cb822a6825);
+            ).addTo(map_93ac606cdd7c14d39aa4aa1480b54cff);
+            feature_group_bd891d4c45caf543373f128af876a050.remove();
+            feature_group_1e9b525a4f719faf5d25a74921344c65.remove();
         
 </script>
 </html>
